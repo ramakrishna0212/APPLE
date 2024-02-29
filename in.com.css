@@ -1,0 +1,100 @@
+*{
+     font-family: system-ui;
+     text-decoration: none;
+}
+body{
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+}
+.overall{
+    overflow: hidden;
+}
+.logo{
+    padding-left: 40%;
+}
+.menubar{
+    margin: -44px;
+    padding: 20px 39%;
+    position: fixed;
+    width: 36%;
+    background: rgba(0,0,0,0.8);
+    backdrop-filter: saturate(180%) blur(20px);
+}
+.menubar a{
+    color: rgb(255, 255, 255);
+    padding: 13px 30px;
+    font-size: smaller;
+}
+.bg{
+    margin: 35px -30%;
+    position: fixed;
+    z-index: -10;
+    padding-right: 7%;
+    margin-right: 8%;
+}
+.products{
+    display: flex;
+    padding-top: 44%;
+    padding-left: 14%;
+}
+.products img{
+    padding: 10% 10%;
+    align-content: space-between;
+}
+.one{
+    margin: -18px -35px;
+    padding-left: 3%;
+}
+span{
+    margin: 49px;
+    color: black;
+}
+video{
+    padding-left: 38%;
+    padding-top: 24%;
+}
+button{
+    width: 10%;
+    padding: 0.5%;
+    margin-left: 47%;
+    border: solid 1px rgb(255, 255, 255);
+    margin-top: 5%;
+    font-size: large;
+    background: rgb(255, 255, 255);
+    filter: drop-shadow(0 0 0.75rem rgba(0, 0, 0, 0.365));
+}
+.off{
+    font-size: 286px;
+    padding-top: 18%;
+    font-weight: 500;
+    padding-left: 11%;
+}
+@media (max-width : 768px ){
+    .menubar{
+        display: contents;
+    }
+    .products{
+        display: block;
+        margin-top: -40%;
+    }
+    .products a{
+        float: left;
+        display: inline-grid;
+    }
+    .bg{
+        position: absolute;
+        top: -6%;
+        left: 15%;
+    }
+    button{
+        width: 28%;
+        position: relative;
+        left: -9%;
+    }
+    video{
+        margin-left: -18%;
+    }
+    .off{
+        font-size: large;
+    }
+}

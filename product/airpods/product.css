@@ -1,0 +1,116 @@
+*{
+    font-family: system-ui;
+}
+body{
+    background: #ffffff;
+}
+.menubar{
+    background-color: #00000057;
+    margin: -33px;
+    padding: 21px 37%;
+    position: fixed;
+    width: 36%;
+    margin-top: -23%;
+}
+.menubar a{
+    color: rgb(255, 255, 255);
+    padding: 10px 30px;
+}
+.container{
+    display: flex;
+    overflow: auto;
+    scroll-snap-type: x mandatory;
+    padding: 11px;
+    gap: 12px;
+    scroll-padding: 10px;
+    width: 40%;
+    margin: 23% 31%;
+    border: solid 1px #000000a8;
+}
+.logo{
+    position: absolute;
+    margin-top: -19px;
+    left: 33%;
+}
+span{
+    position: absolute;
+    left: 445px;
+    top: 34%;
+}
+a{
+    
+    text-decoration: none;
+    color: black;
+}
+.container a{
+    flex: 0 0 100%;
+    scroll-snap-align: start;
+    scroll-snap-stop: always;
+    font-size: 43px;
+}
+.container a:hover{
+    color: rgb(255, 0, 0);
+}
+.scrollup{
+    position: fixed;
+    padding-left: 95%;
+}
+button{
+    background: black;
+    border: solid 2px black;
+    color: white;
+    padding: 10px 42px;
+    font-size: medium;
+    cursor: pointer;
+}
+.pse img{
+    margin: 11px -1%;
+}
+.pse p{
+    position: inherit;
+    padding-left: 18px;
+    cursor: pointer;
+}
+.pse p a {
+    position: relative;
+    padding-left: 34px;
+    top: 18px;
+    left: -1%;
+    z-index: -1;
+    cursor: pointer;
+}
+.up{
+    padding-top: 7%;
+}
+.scroll{
+    padding-left: 94%;
+    font-size: 106%;
+    padding-top: 13%;
+}
+@media (max-width : 768px ){
+    .menubar{
+        display: grid;
+        position: fixed;
+        line-height: 0%;
+        top: 14%;
+    }
+    .logo{
+        margin-top: 29px;
+    }
+    .container{
+        width: 45%;
+        margin-left: 28%;
+    }
+    .up{
+        width: 84%;
+        padding-top: 15%;
+    }   
+    span{
+        font-size: 13px;
+        margin-top: -36.5%;
+        margin-left: -62%;
+    }
+    .scroll{
+        padding-left: 45%;
+    }
+}
